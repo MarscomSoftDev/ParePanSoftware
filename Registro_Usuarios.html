@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/EstilosCSS/resetcss.css" />
+    <link rel="stylesheet" href="/EstilosCSS/Registro_Usuarios.css" />
+    <script src="Registro_Usuarios.js"></script>
+    <title>Registro Usuarios</title>
+  </head>
+  <body>
+    <!-- imagen de fondo montañas -->
+    <img class="imagen_fondo" src="/imagenes/FondoMontañas.png" alt="" />
+    <div class="contenedor_Perfil">
+      <!-- Círculo que actuará como el botón de carga de imagen -->
+      <label for="imagen_Perfil" class="circulo_Imagen">
+        <!-- Icono inicial dentro del círculo -->
+        <img
+          class="Img_Registro_Usuarios"
+          id="icono"
+          src="/imagenes/Img_Registro_Usuarios/subir.png"
+          alt="Cargar foto"
+        />
+      </label>
+
+      <!-- Input file oculto -->
+      <input
+        type="file"
+        id="imagen_Perfil"
+        class="input_Carga"
+        accept="image/*"
+        onchange="mostrarImagen(event)"
+      />
+    </div>
+    <div class="lista_Entradas">
+      <input type="text" class="input_Nombre" placeholder="Name" />
+      <input type="text" class="input_Apellido" placeholder="Last Name" />
+      <input type="text" class="input_Cedula" placeholder="ID Card" />
+      <input type="text" class="input_Cumpleaños" placeholder="Birthdate" />
+      <input type="text" class="input_Email" placeholder="Email" />
+      <input type="text" class="input_Contraseña" placeholder="Password" />
+      <!-- terminos y condiciones -->
+    </div>
+    <div class="terminosycondiciones_contenedor">
+      <input
+        type="checkbox"
+        name="terminosycondiciones"
+        value="checkbox"
+        class="terminosycondiciones_checkbox"
+        id="terminosycondiciones"
+      />
+      <label class="checkbox_label" for="terminosycondiciones"></label>
+      <label for="terminosycondiciones">I accept terms and conditions</label>
+    </div>
+    <div>
+      <button class="button_register">REGISTER</button>
+    </div>
+    <footer class="footer">CREATE BY MARSCOM</footer>
+  </body>
+</html>

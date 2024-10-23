@@ -1,0 +1,231 @@
+.imagen_fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("ruta-de-tu-imagen.jpg");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* 20% de opacidad */
+  z-index: -1;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  font-family: "kaisei Decol", serif;
+}
+
+.titulo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: black;
+  font-weight: lighter;
+  /* margin-bottom: 100px;
+  margin-top: 50px; */
+}
+.contenedor_principal {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.modulo1,
+.modulo2,
+.modulo3,
+.modulo4,
+.modulo5,
+.modulo6 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.modulo1 img,
+.modulo2 img,
+.modulo3 img,
+.modulo4 img,
+.modulo5 img,
+.modulo6 img {
+  width: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1px;
+  border-radius: 45px;
+  gap: 50px;
+  margin: 1px;
+  border: 3px solid #afde7f;
+}
+
+.modulo1 img:hover,
+.modulo2 img:hover,
+.modulo3 img:hover,
+.modulo4 img:hover,
+.modulo5 img:hover,
+.modulo6 img:hover {
+  border-color: #000000; /* Color del borde en hover */
+}
+
+.spam {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modulo6 img {
+  width: 150px;
+  height: 150px;
+}
+.button_register {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.button_register_register {
+  width: 345px;
+  height: 67px;
+  border: 2px solid #afde7f;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  font-family: "kaisei Decol", serif;
+  font-size: 20px;
+  margin: 20px;
+  background-color: #9f2803;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.button_register_register:hover {
+  background-color: #afde7f; /* Fondo verde claro al pasar el cursor */
+}
+
+.button_register_register:active {
+  background-color: #68b44d; /* Fondo verde más oscuro al hacer clic */
+  border: 2px solid #5a9c43;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 10px;
+}
+
+@media (max-width: 340px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .titulo {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor_principal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 0px;
+  }
+
+  .modulo1 img,
+  .modulo2 img,
+  .modulo3 img,
+  .modulo4 img,
+  .modulo5 img,
+  .modulo6 img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+    border-radius: 45px;
+    gap: 20px;
+    margin: 1px;
+    border: 3px solid #afde7f;
+  }
+
+  .spam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+  }
+  .modulo6 img {
+    width: 100px;
+    height: 100px;
+  }
+  /*
+  .modulo4 img {
+    margin-right: 60px;
+  }
+  .modulo2 img {
+    margin-right: 20px;
+  } */
+
+  .button_register {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  .button_register_register {
+    width: 150px;
+    height: 50px;
+    border: 2px solid #afde7f;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #9f2803;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 450px) {
+  .contenedor_principal {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media (min-width: 380px) {
+  .contenedor_principal {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+}
